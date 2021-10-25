@@ -1,0 +1,49 @@
+$accent-color: #2196f3;
+$touch-accent-color: #188ce8;
+$primary-title-text: #212121;
+$primary-text-color: #757575;
+$secondary-title-text: #ffffff;
+$background-color: #2f303a;
+$third-text-color: #000000;
+$second-background-color: #f5f4fa;
+$first-border-color: #ececec;
+$second-border-color: #eeeeee;
+$icons-color: #afb1b8;
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: $secondary-title-text;
+  color: $primary-text-color;
+  list-style: none;
+}
+
+.visually__hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

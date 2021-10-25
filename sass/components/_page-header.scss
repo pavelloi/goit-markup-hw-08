@@ -1,0 +1,16 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  background-color: $secondary-title-text;
+}
+
+.header__border {
+  border-bottom: 1px solid $first-border-color;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
