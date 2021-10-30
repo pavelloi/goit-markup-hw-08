@@ -84,10 +84,6 @@ body {
   justify-content: space-between;
 }
 
-.nav__list {
-  display: none;
-}
-
 .logo {
   padding: 16px 0 16px 15px;
   font-family: Raleway, sans-serif;
@@ -159,10 +155,6 @@ body {
   .header__logo {
     color: #000000;
   }
-}
-
-.contact__list {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -717,6 +709,7 @@ body {
 }
 
 .modal__form {
+  width: 100%;
   margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
