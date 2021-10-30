@@ -27,11 +27,15 @@
 .checkbox__field {
   label {
     display: flex;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: $primary-text-color;
     align-items: center;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
 .checkbox__icon {
