@@ -13,9 +13,25 @@
     &.is-open .menu__close {
       display: none;
     }
+    // &:hover .menu__open,
+    // &:focus .menu__open,
+    // &:hover .menu__close,
+    // &:focus .menu__close {
+    //   fill: $accent-color;
+    // }
   }
   .menu__open {
     display: none;
+    .menu__button:hover &,
+    .menu__button:focus & {
+      fill: $accent-color;
+    }
+  }
+  .menu__close {
+    .menu__button:hover &,
+    .menu__button:focus & {
+      fill: $accent-color;
+    }
   }
 
   .menu__container {

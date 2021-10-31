@@ -276,6 +276,14 @@ body {
   .menu__open {
     display: none;
   }
+  .menu__button:hover .menu__open,
+  .menu__button:focus .menu__open {
+    fill: #2196f3;
+  }
+  .menu__button:hover .menu__close,
+  .menu__button:focus .menu__close {
+    fill: #2196f3;
+  }
   .menu__container {
     z-index: 3;
     position: absolute;
