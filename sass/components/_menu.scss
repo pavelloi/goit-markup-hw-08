@@ -1,31 +1,46 @@
-.menu__button {
-  display: inline-flex;
-  padding: 10px 15px 10px 0;
-  margin: 0;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
+@media screen and (max-width: 767px) {
+  .menu__button {
+    display: inline-flex;
+    padding: 10px 15px 10px 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
 
-  &.is-open .menu__close {
-    display: block;
+    &.is-open .menu__open {
+      display: block;
+    }
+    &.is-open .menu__close {
+      display: none;
+    }
   }
-  &.is-open .menu__open {
+  .menu__open {
     display: none;
   }
-}
-.menu__close {
-  display: none;
-}
 
-.menu__container {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0%;
-  width: 100%;
-  //   height: 796px;
-  background-color: $secondary-title-text;
-  &.is-open {
+  .menu__container {
+    z-index: 3;
+    position: absolute;
     display: block;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 736px;
+    background-color: $secondary-title-text;
+    &.is-open {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+  .menu__open {
+    display: none;
+  }
+
+  .menu__container {
+    display: flex;
   }
 }

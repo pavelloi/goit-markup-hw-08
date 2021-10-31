@@ -1,0 +1,37 @@
+.mobile__list {
+  margin-left: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile__item {
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile__link {
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile__line {
+  //   padding-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
