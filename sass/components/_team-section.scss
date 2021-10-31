@@ -1,24 +1,53 @@
-@media screen and (min-width: 768px) {
-  .section {
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  .section--team {
-    background-color: $second-background-color;
-  }
-  .section__title--cards {
+}
+.section--team {
+  background-color: $second-background-color;
+}
+.section__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $primary-title-text;
+  @media screen and (min-width: 768px) {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    &--cards {
+      margin-bottom: 50px;
+    }
   }
-  .team__list {
+}
+.team__list {
+  display: block;
+  margin-right: 15px;
+  margin-left: 15px;
+  @media screen and (min-width: 768px) {
     display: flex;
     margin-left: -30px;
   }
-  .team__card {
+}
+.team__card {
+  margin-bottom: 30px;
+  background: $secondary-title-text;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
     margin-left: 30px;
     flex-basis: calc(100% / 4 - 30px);
-    background: $secondary-title-text;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
   }
 }
