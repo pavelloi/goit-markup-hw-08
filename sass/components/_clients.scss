@@ -1,6 +1,5 @@
 .container--clients {
   @media screen and (max-width: 767px) {
-    // margin: 0;
     padding: 0 15px;
   }
 }
@@ -11,8 +10,13 @@
     margin-left: -30px;
     margin-top: -30px;
   }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: 0;
     padding: 0;
@@ -23,9 +27,16 @@
   @media screen and (max-width: 767px) {
     margin-left: 30px;
     margin-top: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
     flex-basis: calc((100% - 60px) / 2);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-right: 30px;
     &:last-child {
@@ -35,7 +46,7 @@
 }
 .clients__link {
   display: flex;
-  width: 210px;
+  min-width: 210px;
   height: 92px;
   fill: $icons-color;
   border: 1px solid $icons-color;
@@ -50,7 +61,10 @@
     border: 1px solid $accent-color;
     fill: $accent-color;
   }
-  @media screen and (min-width: 768px) {
-    width: 170px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 170px;
   }
 }

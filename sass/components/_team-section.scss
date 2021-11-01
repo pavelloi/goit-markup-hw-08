@@ -1,8 +1,11 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -18,7 +21,7 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: $primary-title-text;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
@@ -31,7 +34,14 @@
   display: block;
   margin-right: 15px;
   margin-left: 15px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: -30px;
   }
@@ -45,7 +55,13 @@
   &:nth-child(4) {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-left: 30px;
     flex-basis: calc(100% / 4 - 30px);
