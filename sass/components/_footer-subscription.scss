@@ -1,6 +1,12 @@
 .subscription {
-  align-items: baseline;
-  text-align: left;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    align-items: baseline;
+    text-align: left;
+    margin-top: 0;
+  }
 }
 .subscription__strong {
   display: block;
@@ -13,19 +19,27 @@
   color: $secondary-title-text;
 }
 .subscription__form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-right: 15px;
+  margin-left: 15px;
   & input::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03;
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .input {
-  width: 358px;
+  width: 100%;
   height: 50px;
+  margin-bottom: 20px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -40,9 +54,13 @@
   &:focus {
     border: 1px solid $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 .subscription__button {
-  display: flex;
+  display: block;
   min-width: 200px;
   background-color: $accent-color;
   font-weight: 700;
@@ -52,12 +70,16 @@
   color: $secondary-title-text;
   cursor: pointer;
   border: none;
-  align-items: center;
-  text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 29px;
-  margin-left: 12px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 12px;
+  }
 }
 
 .subscription__icon {

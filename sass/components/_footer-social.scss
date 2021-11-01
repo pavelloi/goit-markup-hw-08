@@ -1,7 +1,13 @@
 .network {
-  align-items: baseline;
-  text-align: left;
+  text-align: center;
   margin-right: auto;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    align-items: baseline;
+    text-align: left;
+    margin-right: auto;
+    margin-top: 0;
+  }
 }
 .network__strong {
   display: block;
@@ -16,6 +22,7 @@
 .network__list {
   padding: 0;
   display: flex;
+  justify-content: center;
 }
 .network__item {
   margin-right: 10px;
