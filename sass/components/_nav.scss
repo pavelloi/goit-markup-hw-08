@@ -2,16 +2,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .nav__list {
   display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 285px;
+  }
 }
 .nav__item {
   padding-left: 40px;
   margin-bottom: 32px;
   &:last-child {
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+    padding-left: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 .nav__link {
@@ -30,6 +48,32 @@
   &--current {
     color: $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+    &--current {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+      }
+    }
+  }
 }
 
 .logo {
@@ -47,50 +91,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .nav__list {
-    display: flex;
-  }
-  .nav__item {
-    margin-right: 50px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  .nav__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $primary-title-text;
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:focus,
-    &:hover {
-      color: $accent-color;
-      fill: $accent-color;
-    }
-  }
-  .nav__link--current {
-    position: relative;
-    color: $accent-color;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background-color: $accent-color;
-      border-radius: 2px;
-    }
-  }
   .logo {
     margin-right: 93px;
     padding: 24px 0;

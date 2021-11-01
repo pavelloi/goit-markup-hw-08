@@ -31,9 +31,8 @@
 }
 @media screen and (min-width: 768px) {
   .header__contacts {
-    margin-left: auto;
     display: flex;
-    align-items: center;
+    justify-content: end;
   }
   .contact__list {
     display: flex;
