@@ -8,10 +8,14 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
 }
 
 .mobile__item {
   margin-right: 10px;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -31,7 +35,6 @@
   }
 }
 .mobile__line {
-  //   padding-left: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }

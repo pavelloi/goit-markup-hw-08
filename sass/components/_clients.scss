@@ -4,6 +4,11 @@
   }
 }
 .clients {
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
