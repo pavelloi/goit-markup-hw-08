@@ -32,15 +32,18 @@
 @media screen and (min-width: 1200px) {
   .header__contacts {
     display: flex;
+
     justify-content: end;
   }
   .contact__list {
     display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
   .contact__item {
-    margin-right: 50px;
+    margin-left: 50px;
     &:last-child {
-      margin-right: 0px;
+      margin-left: 0px;
     }
   }
   .contact__link {

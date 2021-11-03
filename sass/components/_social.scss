@@ -3,9 +3,6 @@
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 0 74px;
-  }
 }
 .social__item {
   margin-right: 10px;
