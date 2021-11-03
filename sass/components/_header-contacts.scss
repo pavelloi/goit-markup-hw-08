@@ -73,14 +73,15 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contacts {
-    display: block;
+    display: flex;
   }
   .contact__list {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .contact__item {
-    padding-top: 21px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 21px;
     &:last-child {
       padding-top: 0;
       padding-bottom: 0;

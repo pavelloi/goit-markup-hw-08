@@ -1,6 +1,12 @@
 .portfolio {
   display: block;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -14,7 +20,15 @@
   &:nth-child(9) {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
+    flex-basis: calc((100% - 60) / 2);
+    background: $secondary-title-text;
+  }
+  @media screen and (min-width: 1200px) {
     margin-left: 30px;
     margin-top: 30px;
     margin-right: 0;
@@ -40,6 +54,12 @@
   border-bottom: 1px solid $second-border-color;
   border-left: 1px solid $second-border-color;
   border-right: 1px solid $second-border-color;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    &--first {
+      height: 146px;
+    }
+  }
 }
 
 .product__title {
@@ -48,6 +68,9 @@
   line-height: 2;
   letter-spacing: 0.06em;
   color: $primary-title-text;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    word-wrap: break-word;
+  }
 }
 .product__description {
   margin-top: 4px;
