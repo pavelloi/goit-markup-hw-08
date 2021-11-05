@@ -14,13 +14,12 @@
   }
 }
 .portfolio__card {
-  margin-left: 15px;
-  margin-right: 15px;
   margin-bottom: 30px;
   &:nth-child(9) {
     margin-bottom: 0;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
     margin-left: 30px;
     margin-top: 30px;
     margin-right: 0;
@@ -48,6 +47,11 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .product {
   padding: 20px 24px;
@@ -56,9 +60,7 @@
   border-right: 1px solid $second-border-color;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
-    &--first {
-      height: 146px;
-    }
+    flex-grow: 1;
   }
 }
 

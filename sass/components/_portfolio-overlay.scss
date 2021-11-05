@@ -25,4 +25,8 @@
   letter-spacing: 0.03em;
   color: $secondary-title-text;
   padding: 63px 24px;
+  @media screen and (max-width: 479px) {
+    padding: 32px 12px;
+    font-size: 4vw;
+  }
 }

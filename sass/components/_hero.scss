@@ -18,6 +18,9 @@
     font-size: 44px;
     line-height: 1.36;
   }
+  @media screen and (max-width: 479px) {
+    font-size: 6vw;
+  }
 }
 .hero__button {
   min-width: 200px;

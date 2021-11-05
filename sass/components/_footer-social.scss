@@ -3,10 +3,11 @@
   margin-right: auto;
   margin-top: 60px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    align-items: baseline;
-    text-align: center;
     margin-left: 165px;
-    margin-top: 5px;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
   }
   @media screen and (min-width: 1200px) {
     align-items: baseline;

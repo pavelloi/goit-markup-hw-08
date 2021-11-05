@@ -28,7 +28,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   &.contact__link--current {
     font-size: 8vw;
 
@@ -86,14 +86,17 @@
     flex-direction: column-reverse;
   }
   .contact__item {
-    padding-top: 10px;
-    padding-bottom: 21px;
-    &:last-child {
-      padding-top: 0;
-      padding-bottom: 0;
+    margin-bottom: 0px;
+    &:nth-child(2) {
+      margin-bottom: 10px;
     }
   }
   .contact__link {
+    &--tablet {
+      padding-top: 18px;
+      padding-bottom: 0;
+    }
+    padding-bottom: 21px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
