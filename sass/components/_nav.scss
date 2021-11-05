@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
@@ -15,7 +16,6 @@
 }
 
 .nav__list {
-  display: block;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     margin-right: 45px;
@@ -26,8 +26,6 @@
   }
 }
 .nav__item {
-  padding-left: 40px;
-  padding-top: 48px;
   margin-bottom: 32px;
   &:last-child {
     margin-bottom: 0;
@@ -35,8 +33,7 @@
   @media screen and (min-width: 768px) {
     margin-right: 50px;
     margin-bottom: 0;
-    padding-top: 0;
-    padding-left: 0;
+
     &:last-child {
       margin-right: 0;
     }
@@ -115,4 +112,19 @@
   .header__logo {
     color: $third-text-color;
   }
+  .header__mobile {
+    display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  // .nav__mobile {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  // }
 }

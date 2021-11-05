@@ -1,10 +1,10 @@
 @media screen and (max-width: 767px) {
   .header__contacts {
-    margin: 302px 0 0 40px;
     display: block;
   }
   .contact__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .contact__item {
     margin-bottom: 32px;
@@ -19,7 +19,6 @@
     letter-spacing: 0.02em;
     color: $primary-text-color;
     text-decoration: none;
-
     &--current {
       font-size: 34px;
       color: $accent-color;
@@ -27,6 +26,13 @@
   }
   .contact__icon {
     display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  &.contact__link--current {
+    font-size: 8vw;
+
+    color: $accent-color;
   }
 }
 @media screen and (min-width: 1200px) {

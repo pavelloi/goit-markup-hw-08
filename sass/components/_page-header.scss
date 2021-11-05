@@ -17,12 +17,12 @@
   position: relative;
   background-color: $secondary-title-text;
 }
+.header__border {
+  border-bottom: 1px solid $first-border-color;
+}
 @media screen and (min-width: 768px) {
-  .header__border {
-    border-bottom: 1px solid $first-border-color;
-  }
   .header__container {
-    display: flex;
+    display: block;
     align-items: center;
   }
 }
