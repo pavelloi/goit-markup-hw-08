@@ -22,12 +22,14 @@
 }
 @media screen and (min-width: 768px) {
   .header__container {
-    display: block;
+    display: flex;
     align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
   .header__container {
     padding: 0 15px;
+    display: flex;
+    position: relative;
   }
 }

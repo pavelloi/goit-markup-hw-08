@@ -38,8 +38,7 @@
 @media screen and (min-width: 1200px) {
   .header__contacts {
     display: flex;
-
-    justify-content: end;
+    margin-right: auto;
   }
   .contact__list {
     display: flex;
@@ -93,13 +92,13 @@
   }
   .contact__link {
     &--tablet {
-      padding-top: 18px;
+      padding-top: 21px;
       padding-bottom: 0;
     }
     padding-bottom: 21px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: $primary-text-color;
     text-decoration: none;
@@ -115,7 +114,7 @@
     }
   }
   .contact__icon {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: currentColor;
   }
 }

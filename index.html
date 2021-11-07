@@ -17,26 +17,26 @@
     <!--Шапка-->
     <header class="header">
         <div class="container header__container">
-            <nav class="nav">
             <a class="logo" href="./index.html">Web<span class="header__logo">Studio</span></a>
-            <button class="menu-toggle js-open-menu" type="button"  aria-expanded="false" aria-controls="mobile-menu">
+            <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                <use href="./images/icons.svg#menu_icon"></use></svg>
-                </button>
-            <div class="menu-container js-menu-container"  id="mobile-menu">
-                <button class="menu-toggle js-close-menu" type="button" >
+                    <use href="./images/icons.svg#menu_icon"></use>
+                </svg>
+            </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu" type="button">
                     <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
                         <use href="./images/icons.svg#close_icon"></use>
                     </svg>
                 </button>
-            <div class="header__mobile">
-                <div class="nav__mobile">
+                
+            <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студия</a></li>
                     <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
                 </ul>
-                </div>
+            </nav>
             <div class="header__contacts">
                 <ul class="contact__list">
                     <li class="contact__item">
@@ -49,6 +49,7 @@
                         <a class="contact__link contact__link--tablet" href="mailto:info@devstudio.com">
                         <svg class="contact__icon" width="16px" height="12px"><use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li> 
                 </ul>
+                
                 <ul class="mobile__list">
                     <li class="mobile__item"><a class="mobile__link" href="">Instagram</a><span class="mobile__line"></span></li>
                     <li class="mobile__item"><a class="mobile__link" href="">Twitter</a><span class="mobile__line"></span></li>
@@ -58,8 +59,6 @@
             </div>
             </div>
             </div>
-            </nav>
-        </div>
     </header>
 
     
